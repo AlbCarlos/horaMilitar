@@ -1,10 +1,14 @@
 #ifndef HORAMILITAR_HORA24_H
 #define HORAMILITAR_HORA24_H
+#include "tipoHora.h"
 
 using namespace std;
 
-class hora24 {
-    
+class hora24 : public tipoHora {
+public:
+    hora24();
+    virtual ~hora24();
+    virtual void muestraHora(horaEstandar *);
 };
 
 

@@ -1,10 +1,10 @@
 #ifndef HORAMILITAR_TIPOHORA_H
 #define HORAMILITAR_TIPOHORA_H
-
-using namespace std;
+#include "horaEstandar.h"
 
 class tipoHora {
-    
+public:
+    virtual void muestraHora(horaEstandar *) = 0;
 };
 
 

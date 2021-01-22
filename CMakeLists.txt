@@ -6,10 +6,13 @@ enable_testing()
 
 add_executable(horaMilitar 
     main.cpp
+    
     hora24.cpp
     hora24.h
+
     horaMilitar.cpp
     horaMilitar.h
+
     tipoHora.h
     )
 
