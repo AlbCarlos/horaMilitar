@@ -14,6 +14,12 @@ add_executable(horaMilitar
     horaMilitar.h
 
     tipoHora.h
+
+    companiaHoraria.cpp
+    companiaHoraria.h
+
+    horaEstandar.cpp
+    horaEstandar.h
     )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
