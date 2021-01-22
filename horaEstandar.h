@@ -27,4 +27,4 @@ public:
     string toString();
 };
 
-#endif //HORA MILITAR HORA ESTANDAR
+#endif //HORAMILITAR_HORAESTANDAR_H

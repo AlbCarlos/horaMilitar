@@ -1,14 +1,17 @@
 #ifndef HORAMILITAR_COMPANIAHORARIA_H
 #define HORAMILITAR_COMPANIAHORARIA_H
 #include "tipoHora.h"
-#include "horaEstandoar.h"
+#include "horaEstandar.h"
 
 class companiaHoraria {
 private:
-    horaEstandar *h;
+    horaEstandar **contenedora;
+    int tamanio;
+    int cantidad;
 public:
-    companiaHoraria(horaEstandar * = nullptr);
+    companiaHoraria(int = 0);
     virtual ~companiaHoraria();
+    void agregarHora(horaEstandar *);
     void reporte(tipoHora *);
 };
 
