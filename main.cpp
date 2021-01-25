@@ -4,7 +4,7 @@
 #include "horaMilitar.h"
 
 int main(int, char**) {
-       companiaHoraria *c = new companiaHoraria;
+       companiaHoraria *c = new companiaHoraria(24);
 
        c->agregarHora(new horaEstandar(5, 30, "am"));
        c->agregarHora(new horaEstandar(8, 45, "am"));
