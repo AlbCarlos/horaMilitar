@@ -19,6 +19,5 @@ int main(int, char**) {
 
 
        delete c;
-       system("pause");
        return 0;
 }
