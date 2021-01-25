@@ -1,6 +1,7 @@
 #ifndef HORAMILITAR_HORA24_H
 #define HORAMILITAR_HORA24_H
 #include "tipoHora.h"
+#include <iostream>
 
 using namespace std;
 
