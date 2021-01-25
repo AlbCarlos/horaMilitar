@@ -12,9 +12,8 @@ companiaHoraria::companiaHoraria(int tam) : tamanio(tam){
 void companiaHoraria::agregarHora(horaEstandar *hE){
     if (cantidad < tamanio){
         contenedora[cantidad] = hE;
+         cantidad++;
     }
-
-    cantidad++;
 }
 
 companiaHoraria::~companiaHoraria(){
@@ -24,6 +23,17 @@ companiaHoraria::~companiaHoraria(){
     delete []contenedora;
 }
 
-void companiaHoraria::reporte(tipoHora *){
+void companiaHoraria::reporte(){
+    for (int i = 0; i < cantidad; i++)
+    {
+        cout << contenedora[i]->toString();
+    }
+}
 
+void companiaHoraria::reporte(tipoHora *th){
+    for (int i = 0; i < cantidad; i++)
+    {
+        th->muestraHora(contenedora[i]);
+    }
+    delete th;
 }
