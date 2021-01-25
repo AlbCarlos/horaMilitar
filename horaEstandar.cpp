@@ -35,7 +35,7 @@ void horaEstandar::setAmpm(string ampm) {
 string horaEstandar::toString() {
     stringstream ss;
 
-    ss << getHoras() << ":" << getMinutos() << " " + getAmpm();
+    ss << getHoras() << ":" << getMinutos() << getAmpm() << endl;
     
     return ss.str();
 }
